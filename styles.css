@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Optionally add a background color for the body */
+}
+.progress{
+    width:120px;
+  height:20px;
+  border-radius: 20px;
+  background:
+   repeating-linear-gradient(135deg,#f03355 0 10px,#ffa516 0 20px) 0/0%   no-repeat,
+   repeating-linear-gradient(135deg,#ddd    0 10px,#eee    0 20px) 0/100%;
+  animation:p3 2s infinite;
+}
+@keyframes p3 {
+    100% {background-size:100%}
+}
